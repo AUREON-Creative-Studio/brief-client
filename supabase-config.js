@@ -11,5 +11,5 @@
 
   NEVER put a secret key or service_role key in this file.
 */
-window.AUREON_SUPABASE_URL = "https://bhgcvzkdmhqgopawnkgi.supabase.co/rest/v1/";
+window.AUREON_SUPABASE_URL = "https://bhgcvzkdmhqgopawnkgi.supabase.co";
 window.AUREON_SUPABASE_ANON_KEY = "sb_publishable_xubYSX6pxbJt9kHC3CjPbw_pzV7yrn6";
