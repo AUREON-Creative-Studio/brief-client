@@ -34,6 +34,6 @@ create policy "AUREON admin can read client briefs"
 on public.client_briefs
 for select
 to authenticated
-using (auth.uid() = 'ADMIN_USER_UUID'::uuid);
+using (auth.uid() = '6b2f33fc-5e99-4a07-b1e1-fdf7a2eaad71'::uuid);
 
 -- The dashboard is read-only. No update/delete policies or grants are created.
