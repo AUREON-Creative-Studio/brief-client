@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <title>AUREON — Espace administration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <header class="topbar admin-topbar">
+    <a class="brand" href="index.html" aria-label="AUREON — Accueil">
+      <img class="brand-logo" src="aureon-logo.jfif" alt="Logo AUREON">
+      <span class="brand-name">AUREON<span>.</span><small>PRIVATE WORKSPACE</small></span>
+    </a>
+    <a class="admin-back-link" href="index.html">← Questionnaire public</a>
+  </header>
+
+  <main class="admin-shell">
+    <section class="admin-heading">
+      <div class="eyebrow"><span class="eyebrow-line"></span> AUREON / PRIVATE ACCESS</div>
+      <h1>Client <em>briefs.</em></h1>
+      <p>Consultez les demandes envoyées à votre studio.</p>
+    </section>
+
+    <section class="admin-login-card" id="login-panel">
+      <div class="section-index">AUTHENTIFICATION <span>— ADMINISTRATEUR</span></div>
+      <h2>Connexion<span class="heading-period">.</span></h2>
+      <p class="section-description">Connectez-vous avec le compte administrateur AUREON.</p>
+      <form id="login-form">
+        <label for="admin-email">Adresse e-mail</label>
+        <input id="admin-email" type="email" autocomplete="username" required placeholder="admin@aureon.com">
+        <label for="admin-password">Mot de passe</label>
+        <input id="admin-password" type="password" autocomplete="current-password" required placeholder="Votre mot de passe">
+        <p class="admin-error" id="login-error" role="alert"></p>
+        <button class="btn-next admin-button" type="submit">Se connecter <span>→</span></button>
+      </form>
+    </section>
+
+    <section class="admin-dashboard" id="dashboard-panel" hidden>
+      <div class="dashboard-toolbar">
+        <div><div class="section-index">VOTRE ESPACE <span>— AUREON</span></div><h2>Soumissions<span class="heading-period">.</span></h2></div>
+        <button class="admin-logout" id="logout-button" type="button">Déconnexion ↗</button>
+      </div>
+      <div class="admin-stats">
+        <div><span>TOTAL DES BRIEFS</span><strong id="brief-count">—</strong></div>
+        <div><span>DERNIÈRE MISE À JOUR</span><strong id="last-updated">—</strong></div>
+      </div>
+      <p class="admin-error" id="dashboard-error" role="alert"></p>
+      <div class="brief-list" id="brief-list"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

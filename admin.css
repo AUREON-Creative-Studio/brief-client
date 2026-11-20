@@ -1,0 +1,43 @@
+.admin-body{background:#111;color:#f4f2ee;min-height:100vh}
+.admin-topbar{border-color:rgba(255,255,255,.1)}
+.admin-topbar .brand{color:#f4f2ee}
+.admin-topbar .brand-logo{border-color:rgba(201,164,92,.5)}
+.admin-back-link{color:#b8ad9d;text-decoration:none;font-size:10px;letter-spacing:.08em}
+.admin-shell{width:min(1050px,88%);margin:75px auto 100px}
+.admin-heading{margin-bottom:42px}
+.admin-heading .eyebrow{color:#bca47d}
+.admin-heading h1{font-size:clamp(55px,7vw,86px);color:#f4f2ee;margin:28px 0 12px}
+.admin-heading h1 em{color:#c9a45c}
+.admin-heading p{color:#aaa49a;font-size:13px}
+.admin-login-card,.admin-dashboard{background:#1b1b1b;border:1px solid rgba(201,164,92,.18);padding:clamp(25px,4vw,48px)}
+.admin-login-card{max-width:540px}
+.admin-login-card h2,.admin-dashboard h2{color:#f4f2ee}
+.admin-login-card .section-description{color:#aaa49a}
+.admin-login-card label{display:block;font-size:11px;font-weight:600;margin:19px 0 9px;color:#ded8ce}
+.admin-login-card input{width:100%;padding:14px 15px;background:#111;border:1px solid #38342e;color:#f4f2ee;outline:none}
+.admin-login-card input:focus{border-color:#c9a45c}
+.admin-button{margin-top:18px;width:100%;background:#c9a45c;border-color:#c9a45c;color:#17130d}
+.admin-button:hover{background:#e0bd76;border-color:#e0bd76}
+.admin-error{min-height:18px;color:#e59b8e;font-size:11px}
+.admin-dashboard{min-height:280px}
+.dashboard-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.admin-logout{border:1px solid #514735;background:transparent;color:#e5d5b5;padding:12px 16px;font-size:10px}
+.admin-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:27px 0}
+.admin-stats>div{background:#111;padding:18px;border:1px solid #302b24;display:flex;flex-direction:column;gap:9px}
+.admin-stats span{font-size:8px;letter-spacing:.15em;color:#a99a80}
+.admin-stats strong{font:500 25px Manrope;color:#f4f2ee}
+.brief-list{display:grid;gap:10px}
+.brief-card{border:1px solid #39342c;background:#151515}
+.brief-card summary{list-style:none;cursor:pointer;padding:17px 19px;display:flex;justify-content:space-between;gap:15px;align-items:center}
+.brief-card summary::-webkit-details-marker{display:none}
+.brief-company{font:600 13px Manrope;color:#f2ede4}
+.brief-date{font-size:9px;color:#a99a80;white-space:nowrap}
+.brief-content{padding:0 19px 18px;border-top:1px solid #302b24}
+.answer-row{padding:12px 0;border-bottom:1px solid #29251f}
+.answer-row:last-child{border-bottom:0}
+.answer-row strong{display:block;font-size:9px;letter-spacing:.07em;color:#c9a45c;margin-bottom:6px}
+.answer-row p{margin:0;color:#e0dbd2;font-size:11px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}
+.brief-actions{display:flex;justify-content:flex-end;padding-top:12px}
+.export-button{background:transparent;border:1px solid #5a4b32;color:#d8c49d;padding:9px 13px;font-size:9px}
+.empty-state{padding:30px;text-align:center;border:1px dashed #514735;color:#aaa49a;font-size:12px}
+@media(max-width:600px){.admin-shell{margin:45px auto 65px}.dashboard-toolbar{align-items:flex-start;flex-direction:column}.admin-stats{grid-template-columns:1fr}.brief-card summary{align-items:flex-start;flex-direction:column}.admin-back-link{font-size:8px}}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f2ee">
+  <meta name="description" content="Questionnaire de découverte et brief créatif pour votre projet de site web.">
+  <title>AUREON — Client Creative Brief</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="AUREON — Accueil">
+      <img class="brand-logo" src="aureon-logo.jfif" alt="Logo AUREON">
+      <span class="brand-name">AUREON<span>.</span><small>CREATIVE STUDIO</small></span>
+    </a>
+    <div class="top-note"><span class="status-dot"></span> QUESTIONNAIRE CLIENT <span class="top-divider">·</span> 2026</div>
+  </header>
+
+  <main class="layout">
+    <aside class="intro-panel">
+      <div class="eyebrow"><span class="eyebrow-line"></span> AUREON — DIGITAL EXPERIENCES</div>
+      <h1>Votre vision.<br>Notre <em>signature.</em></h1>
+      <p class="intro-copy">Chez AUREON, chaque expérience digitale commence par une vision claire. Partagez avec nous votre identité, vos ambitions et l’univers que vous souhaitez construire.</p>
+      <div class="intro-bottom">
+        <div class="vertical-rule"></div>
+        <div>
+          <span class="small-label">AUREON STUDIO</span>
+          <strong>Strategy · Design · Development</strong>
+        </div>
+      </div>
+      <div class="architecture-stamp aureon-stamp" aria-hidden="true">
+        <span>THINK</span><span>BEYOND</span><span>ORDINARY.</span>
+        <div class="stamp-line"></div>
+      </div>
+    </aside>
+
+    <section class="form-panel" aria-label="Questionnaire client">
+      <div class="form-topline">
+        <span id="step-kicker">ÉTAPE 01 / 03</span>
+        <span id="progress-percent">0% COMPLÉTÉ</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+
+      <form id="brief-form" novalidate>
+        <section class="step active" data-step="0">
+          <div class="section-index">01 <span>— À PROPOS</span></div>
+          <h2>Votre entreprise<span class="heading-period">.</span></h2>
+          <p class="section-description">Commençons par les bases pour comprendre qui vous êtes et ce que vous faites.</p>
+
+          <div class="field">
+            <label for="company">Quel est le nom exact de votre entreprise ? <b>*</b></label>
+            <input id="company" name="Nom de l'entreprise" type="text" placeholder="Ex. : Atelier Architecture" required>
+          </div>
+
+          <fieldset class="field">
+            <legend>Quelle est votre spécialité ? <b>*</b></legend>
+            <p class="field-hint">Vous pouvez sélectionner plusieurs réponses.</p>
+            <div class="choice-grid">
+              <label class="choice"><input type="checkbox" name="Spécialité" value="Architecture"><span>Architecture</span></label>
+              <label class="choice"><input type="checkbox" name="Spécialité" value="Architecture intérieure"><span>Architecture intérieure</span></label>
+              <label class="choice"><input type="checkbox" name="Spécialité" value="Décoration"><span>Décoration</span></label>
+              <label class="choice"><input type="checkbox" name="Spécialité" value="Urbanisme"><span>Urbanisme</span></label>
+              <label class="choice"><input type="checkbox" name="Spécialité" value="Autres"><span>Autres</span></label>
+            </div>
+            <input class="other-input" name="Autre spécialité" type="text" placeholder="Précisez votre autre spécialité (facultatif)">
+          </fieldset>
+
+          <div class="field">
+            <label for="services">Quels sont les principaux services que vous proposez ? <b>*</b></label>
+            <textarea id="services" name="Principaux services" rows="3" placeholder="Présentez vos services principaux..." required></textarea>
+          </div>
+          <div class="field">
+            <label for="description">Comment décririez-vous votre entreprise ?</label>
+            <textarea id="description" name="Description de l'entreprise" rows="3" placeholder="Votre histoire, votre vision, vos valeurs..."></textarea>
+          </div>
+          <div class="field">
+            <label for="difference">Qu'est-ce qui vous différencie de vos concurrents ?</label>
+            <textarea id="difference" name="Différenciation" rows="3" placeholder="Votre approche, votre expertise, votre signature..."></textarea>
+          </div>
+          <div class="field">
+            <label for="creation">Quelle est la date de création de votre entreprise ?</label>
+            <input id="creation" name="Date de création" type="date">
+          </div>
+          <div class="field">
+            <label for="contact">Quelles sont vos coordonnées professionnelles ? <b>*</b></label>
+            <textarea id="contact" name="Coordonnées professionnelles" rows="3" placeholder="Téléphone, e-mail, adresse, ville, réseaux sociaux..." required></textarea>
+          </div>
+        </section>
+
+        <section class="step" data-step="1">
+          <div class="section-index">02 <span>— DIRECTION ARTISTIQUE</span></div>
+          <h2>Votre identité visuelle<span class="heading-period">.</span></h2>
+          <p class="section-description">Définissons ensemble l'atmosphère et les codes visuels de votre futur site.</p>
+
+          <div class="field">
+            <div class="label-row">
+              <label>Quelles sont les quatre couleurs principales de votre entreprise ?</label>
+              <span class="field-tag">4 COULEURS</span>
+            </div>
+            <p class="field-hint">Utilisez les sélecteurs pour choisir librement n'importe quelle couleur. Vous pouvez aussi saisir un code HEX précis.</p>
+            <div class="color-grid">
+              <div class="color-control">
+                <label for="color-1">Couleur 01 <span>Principale</span></label>
+                <div class="color-input-wrap"><input type="color" id="color-1" name="Couleur 1" value="#202A35"><input type="text" class="hex-value" data-for="color-1" value="#202A35" maxlength="7" aria-label="Code HEX couleur 1"></div>
+              </div>
+              <div class="color-control">
+                <label for="color-2">Couleur 02 <span>Secondaire</span></label>
+                <div class="color-input-wrap"><input type="color" id="color-2" name="Couleur 2" value="#D6C7B2"><input type="text" class="hex-value" data-for="color-2" value="#D6C7B2" maxlength="7" aria-label="Code HEX couleur 2"></div>
+              </div>
+              <div class="color-control">
+                <label for="color-3">Couleur 03 <span>Accent</span></label>
+                <div class="color-input-wrap"><input type="color" id="color-3" name="Couleur 3" value="#A77B55"><input type="text" class="hex-value" data-for="color-3" value="#A77B55" maxlength="7" aria-label="Code HEX couleur 3"></div>
+              </div>
+              <div class="color-control">
+                <label for="color-4">Couleur 04 <span>Complémentaire</span></label>
+                <div class="color-input-wrap"><input type="color" id="color-4" name="Couleur 4" value="#F4F2EE"><input type="text" class="hex-value" data-for="color-4" value="#F4F2EE" maxlength="7" aria-label="Code HEX couleur 4"></div>
+              </div>
+            </div>
+            <div class="palette-preview">
+              <div class="palette-preview-head"><span>APERÇU DE VOTRE PALETTE</span><span>MISE À JOUR EN DIRECT</span></div>
+              <div class="palette-swatches" id="palette-swatches">
+                <span style="background:#202A35"></span><span style="background:#D6C7B2"></span><span style="background:#A77B55"></span><span style="background:#F4F2EE"></span>
+              </div>
+            </div>
+            <p class="micro-note">Astuce : vous pouvez choisir vos couleurs à partir de toute la palette de votre appareil, ou entrer directement un code HEX comme #C9A45C.</p>
+          </div>
+
+          <fieldset class="field">
+            <legend>Quel thème préférez-vous pour votre site ?</legend>
+            <div class="choice-grid two-col">
+              <label class="choice"><input type="radio" name="Thème" value="Clair"><span>Clair</span></label>
+              <label class="choice"><input type="radio" name="Thème" value="Sombre"><span>Sombre</span></label>
+              <label class="choice"><input type="radio" name="Thème" value="Combinaison des deux"><span>Combinaison des deux</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>Quel style graphique souhaitez-vous ?</legend>
+            <div class="style-list">
+              <label class="style-choice"><input type="radio" name="Style graphique" value="Luxe & minimaliste"><span class="style-number">01</span><span class="style-text"><strong>Luxe & minimaliste</strong><small>Épuré, raffiné, intemporel</small></span><span class="style-arrow">↗</span></label>
+              <label class="style-choice"><input type="radio" name="Style graphique" value="Moderne & contemporain"><span class="style-number">02</span><span class="style-text"><strong>Moderne & contemporain</strong><small>Audacieux, actuel, structuré</small></span><span class="style-arrow">↗</span></label>
+              <label class="style-choice"><input type="radio" name="Style graphique" value="Classique & élégant"><span class="style-number">03</span><span class="style-text"><strong>Classique & élégant</strong><small>Équilibré, sobre, prestigieux</small></span><span class="style-arrow">↗</span></label>
+              <label class="style-choice"><input type="radio" name="Style graphique" value="Artistique & créatif"><span class="style-number">04</span><span class="style-text"><strong>Artistique & créatif</strong><small>Expressif, singulier, inspirant</small></span><span class="style-arrow">↗</span></label>
+              <label class="style-choice"><input type="radio" name="Style graphique" value="Industriel & architectural"><span class="style-number">05</span><span class="style-text"><strong>Industriel & architectural</strong><small>Matières brutes, lignes, volumes</small></span><span class="style-arrow">↗</span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="step" data-step="2">
+          <div class="section-index">03 <span>— POUR ALLER PLUS LOIN</span></div>
+          <h2>Vos inspirations<span class="heading-period">.</span></h2>
+          <p class="section-description">Quelques détails supplémentaires nous aideront à donner la bonne direction au projet.</p>
+          <div class="field">
+            <label for="references">Avez-vous des sites web que vous appréciez particulièrement ?</label>
+            <textarea id="references" name="Sites de référence" rows="3" placeholder="Collez les liens et dites-nous ce que vous aimez..."></textarea>
+          </div>
+          <div class="field">
+            <label for="assets">Disposez-vous déjà d'éléments graphiques ?</label>
+            <textarea id="assets" name="Éléments graphiques disponibles" rows="3" placeholder="Logo, charte graphique, photographies, plans, vidéos..."></textarea>
+          </div>
+          <div class="field">
+            <label for="objectives">Quels sont les objectifs principaux de votre futur site web ?</label>
+            <textarea id="objectives" name="Objectifs du site" rows="3" placeholder="Présenter vos projets, obtenir des demandes de devis, développer votre visibilité..."></textarea>
+          </div>
+          <div class="field">
+            <label for="features">Quelles fonctionnalités particulières souhaitez-vous intégrer ?</label>
+            <textarea id="features" name="Fonctionnalités souhaitées" rows="3" placeholder="Galerie de projets, formulaire de contact, blog, multilingue..."></textarea>
+          </div>
+          <div class="field">
+            <label for="remarks">Avez-vous d'autres remarques ou exigences ?</label>
+            <textarea id="remarks" name="Autres remarques" rows="4" placeholder="Tout ce qui pourrait nous aider à mieux comprendre votre vision..."></textarea>
+          </div>
+          <div class="privacy-note"><span class="privacy-icon">✳</span><p>Merci pour votre temps. En cliquant sur Envoyer, vos réponses seront transmises de manière sécurisée à AUREON pour le suivi de votre projet.</p></div>
+        </section>
+
+        <div class="form-error" id="form-error" role="alert" aria-live="polite"></div>
+        <div class="form-actions">
+          <button type="button" class="btn-back" id="back-button" disabled><span>←</span> Précédent</button>
+          <button type="button" class="btn-next" id="next-button">Continuer <span>→</span></button>
+          <button type="submit" class="btn-next btn-submit" id="submit-button" hidden>Envoyer mes réponses <span>→</span></button>
+        </div>
+        <div class="form-footer"><span>AUREON STUDIO</span><span>CRAFTING DIGITAL EXPERIENCES.</span></div>
+      </form>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
